@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+  @apply relative m-10 flex-col overflow-hidden rounded-lg border bg-white shadow;
+}
+
+.pricetag {
+  @apply absolute top-0 right-0 ml-2 mr-2 rotate-3 bg-red-600 p-5 text-xl text-white md:text-4xl;
+}
+
+.textfield {
+  @apply w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm focus:border-custompurple focus:outline-none focus:ring-1 focus:ring-custompurple;
+}
+
+.searchfield {
+  @apply ml-2 w-full rounded-lg border border-gray-300 p-3 shadow-sm focus:border-custompurple focus:outline-none focus:ring-1 focus:ring-custompurple;
+}
+
+.buttonstyles {
+  @apply flex w-full justify-center rounded-md border border-transparent bg-custompurple py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-custompurplehover focus:outline-none focus:ring-2 focus:ring-custompurplehover focus:ring-offset-2;
+}
+
+.titlestyles {
+  @apply -rotate-1 -skew-x-6 justify-center bg-black p-2 text-4xl text-white hover:underline;
+}
+
+.descriptionstyles {
+  @apply mt-6 p-10;
+}
+
+.shortbuttonstyles {
+  @apply rounded-md border border-transparent bg-custompurple py-2 px-4 text-sm font-medium uppercase text-white shadow-sm hover:bg-custompurplehover focus:outline-none focus:ring-2 focus:ring-custompurplehover;
+}
+
+.accountstyles {
+  @apply m-1 rounded-lg bg-white p-2 text-2xl font-semibold shadow-md;
+}
+
+.sideBarButtonStyles {
+  @apply w-full rounded-lg bg-gradient-to-br from-[#1476FF] to-[#00abda] bg-clip-text p-4 text-2xl font-extrabold text-transparent shadow-md;
+}

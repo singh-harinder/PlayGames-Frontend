@@ -1,0 +1,11 @@
+.next
+.vscode
+node_modules
+types
+dist
+build
+jest.setup.js
+postcss.config.js
+prettier.config.js
+tailwind.config.js
+next.config.js

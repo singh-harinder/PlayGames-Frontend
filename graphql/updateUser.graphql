@@ -1,0 +1,20 @@
+mutation updateUser(
+  $profileId: ID!
+  $addressId: ID!
+  $name: String
+  $house: String
+  $state: String
+  $email: String
+  $city: String
+) {
+  updateUser(id: $profileId, data: { name: $name, email: $email }) {
+    name
+    email
+    id
+  }
+  updateUserAddress(id: $addressId, data: { house: $house, City: $city, State: $state }) {
+    house
+    City
+    State
+  }
+}

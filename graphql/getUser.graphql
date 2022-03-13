@@ -1,0 +1,40 @@
+query User {
+  authenticatedItem {
+    ... on User {
+      id
+      name
+      email
+      address {
+        id
+        house
+        City
+        State
+      }
+      products {
+        id
+        name
+        price
+        photo {
+          image {
+            publicUrlTransformed
+          }
+        }
+      }
+      cart {
+        id
+        quantity
+        product {
+          id
+          name
+          description
+          price
+          photo {
+            image {
+              publicUrlTransformed
+            }
+          }
+        }
+      }
+    }
+  }
+}

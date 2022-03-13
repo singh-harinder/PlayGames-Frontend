@@ -1,0 +1,20 @@
+mutation signUp($name: String!, $email: String!, $password: String!) {
+  createUser(
+    data: {
+      name: $name
+      email: $email
+      password: $password
+      address: { create: { house: "Enter your Complete Address", City: "Enter your City", State: "Enter your State" } }
+    }
+  ) {
+    id
+    email
+    name
+    address {
+      id
+      house
+      City
+      State
+    }
+  }
+}
