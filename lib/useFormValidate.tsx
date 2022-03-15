@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 type Inputs = {
   title?: string;
@@ -22,6 +22,7 @@ export default function useFormValidate() {
       setFormError(true);
       return true;
     }
+    return false;
   }
 
   return {
