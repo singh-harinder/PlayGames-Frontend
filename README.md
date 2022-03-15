@@ -1,27 +1,27 @@
-# Next.js + Tailwind CSS Example
+# A complete fullstack E-Commerce store **_PlayGames_** that sells games.
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+url : <https://playgames.quest>
 
-## Preview
+## Frontend is written using Nextjs in React typescript with Apollo for caching and the link between frontend and backend.
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+## TailwindCSS is used to style the website using the utility classes.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## Backend is written in typescript and headless CMS Keystone is along with the MongoDB database to store the data. 
 
-## Deploy your own
+## Stripe is used to process payments.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+## sendinblue is used to deliver the emails.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+## It is deployed on Digital Ocean.
 
-## How to use
+Apollo is used for caching. Pagination is there. Cloudinary is the image host for the store.
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+## Users can:
++ Create an account
++ Browse the store. This can be done without creating an account but you need one to add items to cart and checkout.
++ Manage their account. Edit profile, add address.
++ Add products to cart and checkout with their credit cards.
++ Sell their own products and much more..... Visit the site to explore it
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+It's completely caching the data and makes use of Nextjs file based routing and server side rendering for performance.
