@@ -4,11 +4,9 @@ services:
     build: .
     ports:
       - "3000:3000"
-    volumes:
-      - ./:/app
-      - /app/node_modules
     environment:
       - NEXT_PUBLIC_PRODUCTION_ENDPOINT=${NEXT_PUBLIC_PRODUCTION_ENDPOINT}
       - NEXT_PUBLIC_PAGE=${NEXT_PUBLIC_PAGE}
       - NEXT_PUBLIC_STRIPE_KEY=${NEXT_PUBLIC_STRIPE_KEY}
       - SCHEMA_ENDPOINT=${SCHEMA_ENDPOINT}
+      - PORT=${PORT}
