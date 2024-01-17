@@ -4,6 +4,7 @@ ARG NEXT_PUBLIC_PRODUCTION_ENDPOINT
 ARG NEXT_PUBLIC_PAGE
 ARG NEXT_PUBLIC_STRIPE_KEY
 ARG SCHEMA_ENDPOINT
+ARG PORT
 
 RUN apk add --no-cache tini
 ENTRYPOINT ["/sbin/tini", "--"]
@@ -27,7 +28,7 @@ FROM node:14-alpine3.14 as prod
 RUN mkdir /app && chown -R node:node /app
 WORKDIR /app
 ENV NODE_ENV=production
-ENV PORT=7777
+ENV PORT=3000
 COPY --chown=node:node package.json package-lock.json ./
 RUN npm ci --production && npm cache clean --force
 COPY --from=build /app/.next ./.next
